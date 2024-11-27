@@ -1,59 +1,95 @@
-# AetherisECommece
+# 🌿 Aetheris
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+_Aetheris é um e-commerce especializado na venda de plantas de diversas espécies, proporcionando aos clientes uma experiência única de conexão com a natureza._
 
-## Development server
+## 📖 Sobre o Projeto
 
-To start a local development server, run:
+**Aetheris** é um projeto individual desenvolvido como parte do curso de Frontend da Ada Tech.  
+O objetivo é criar um e-commerce funcional e dinâmico, implementando conceitos aprendidos em aula, mas com uma temática única. A proposta inclui a exibição de produtos na tela inicial, um carrinho interativo e funcionalidades de CRUD para gerenciar os produtos.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🎯 Funcionalidades Principais
 
-## Code scaffolding
+1. **Lista de Produtos (Cards)**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+   - Exibição dinâmica de cards representando os itens disponíveis para compra.
 
-```bash
-ng generate component component-name
-```
+2. **Formulário de Adição de Produtos**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   - Um formulário para adicionar novos cards ao sistema, disponível apenas para usuários autenticados.
 
-```bash
-ng generate --help
-```
+3. **Carrinho Funcional**
 
-## Building
+   - Itens podem ser adicionados e removidos do carrinho em tempo real, atualizando dinamicamente a interface.
 
-To build the project run:
+4. **Sistema de Rotas**
 
-```bash
-ng build
-```
+   - Tela principal para exibição de cards.
+   - Tela para o formulário de adição de novos itens.
+   - Página _Not Found_ para rotas inexistentes.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+5. **Integração com API**
+   - Os dados dos cards são consumidos de uma API, garantindo um serviço centralizado.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng test
-```
+[![My Skills](https://skillicons.dev/icons?i=angular,html,sass,ts&theme=light)](https://skillicons.dev)
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🚀 Como Rodar o Projeto
 
-```bash
-ng e2e
-```
+1. **Clone o repositório**
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+   ```bash
+   git clone https://github.com/Ectomous/Aetheris.git
+   cd aetheris
+   ```
 
-## Additional Resources
+2. **Instale as dependências**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento**
+
+   ```bash
+   ng serve
+   ```
+
+4. **Acesse no navegador**
+
+   Abra o seu navegador e acesse o endereço apresentado na CLI.
+
+   _O endereço padrão é http://localhost:4200_
+
+---
+
+## 📝 Requisitos do Projeto
+
+### Obrigatórios
+
+- [x] Criar um e-commerce com base no aprendizado em aula.
+- [x] Implementar uma lista de cards na tela principal.
+- [x] Criar um formulário para adição de novos cards.
+- [x] Implementar um carrinho funcional.
+- [x] Criar e configurar rotas para navegação.
+- [x] Consumir dados de uma API.
+- [x] Restringir a criação de novos cards apenas a usuários logados.
+
+### Extras
+
+- [ ] CRUD completo para os cards (opcional).
+
+---
+
+## 📧 Contato
+
+Criado por **Eric Mescouto**.
+
+- GitHub: [Ectomous](https://github.com/Ectomous)
+- Email: h.ericmescouto@gmail.com
