@@ -1,0 +1,19 @@
+<h2>Plant Information Form</h2>
+<form [formGroup]="productForm" (ngSubmit)="submitForm()">
+  <label>Nome da Planta</label>
+  <input formControlName="name" placeholder="Insira o nome da planta">
+
+  <label>Preço</label>
+  <input formControlName="price" placeholder="Insira o preço">
+
+  <label>Descrição</label>
+  <textarea formControlName="description" rows="4" placeholder="Insira a descrição da planta"></textarea>
+
+  <label>Image URL</label>
+  <input formControlName="image" placeholder="Insira a URL da imagem da planta">
+
+  <label>Quantidade Disponível</label>
+  <input formControlName="availableInStock" placeholder="Insira a quantidade disponível">
+
+  <button type="submit">Confirmar</button>
+</form>
