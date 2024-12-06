@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Ficus lyrata",
+      "price": 44.9,
+      "description": "Ficus lyrata, também conhecido como Fiddle Leaf Fig ou Figueira-Lira, é uma planta ornamental altamente valorizada por suas grandes folhas verde-escuras e brilhantes, que possuem formato de violino. Originária das florestas tropicais da África Ocidental, é uma escolha popular para decoração de interiores, trazendo um toque de elegância e frescor para qualquer ambiente.",
+      "image": "https://weflores.com/wp-content/uploads/Ficus-lyrata-bambino.jpg",
+      "availableInStock": 3
+    },
+    {
+      "id": "2",
+      "name": "Monstera deliciosa",
+      "price": 39.9,
+      "description": "Monstera deliciosa, popularmente chamada de Costela-de-Adão, é conhecida por suas folhas grandes e recortadas. Originária das florestas tropicais da América Central, é perfeita para trazer um toque tropical ao ambiente.",
+      "image": "https://www.thesill.com/cdn/shop/files/the-sill_Medium-Monstera-Deliciosa_Medium_Isabella_Stone_Variant_b68d0a34-b068-4105-a15c-7d1b22ba6b29.jpg?v=1726505945&width=1946",
+      "availableInStock": 5
+    },
+    {
+      "id": "3",
+      "name": "Sansevieria trifasciata",
+      "price": 29.9,
+      "description": "Sansevieria trifasciata, ou Espada-de-São-Jorge, é uma planta resistente e fácil de cuidar. Suas folhas verticais e variegadas a tornam uma excelente escolha para iniciantes.",
+      "image": "https://boxloja-std-assets.nyc3.cdn.digitaloceanspaces.com/lojas/9s0e9/produtos/f466f580-f66d-4958-8c33-9e3442f880ae.png",
+      "availableInStock": 8
+    },
+    {
+      "id": "4",
+      "name": "Epipremnum aureum",
+      "price": 24.9,
+      "description": "Epipremnum aureum, também conhecido como Jiboia, é uma planta de fácil cultivo, famosa por suas folhas em formato de coração e crescimento rápido.",
+      "image": "https://www.gardenia.net/wp-content/uploads/2024/02/shutterstock_2245950515.jpg",
+      "availableInStock": 12
+    },
+    {
+      "id": "5",
+      "name": "Chlorophytum comosum",
+      "price": 19.9,
+      "description": "Chlorophytum comosum, ou Planta-Aranha, é uma opção charmosa e de baixa manutenção, com folhas verdes e listras brancas.",
+      "image": "https://hortology.co.uk/cdn/shop/products/Chlorophytum-Ocean-Spider-Plant_ad5b87b5-b3ad-4a3d-8d8b-6991cea73bff_1200x.jpg?v=1719490204",
+      "availableInStock": 10
+    },
+    {
+      "id": "6",
+      "name": "Philodendron hederaceum",
+      "price": 34.9,
+      "description": "Philodendron hederaceum, conhecido como Filodendro, é uma planta trepadeira ideal para ambientes internos, com folhas em formato de coração.",
+      "image": "https://dcdn.mitiendanube.com/stores/002/900/459/products/804f5b267e02247a9e3dc83b6f4245b2-9aa85058468b4e80b116945739646855-1024-1024.jpg",
+      "availableInStock": 7
+    },
+    {
+      "id": "7",
+      "name": "Calathea orbifolia",
+      "price": 49.9,
+      "description": "Calathea orbifolia é uma planta ornamental com folhas largas e listradas, perfeita para adicionar um toque sofisticado ao ambiente.",
+      "image": "https://images.tcdn.com.br/img/img_prod/762187/calateia_melancia_pote_23_calathea_orbifolia_337_1_c46f8e18a7996504d5116372a3aa183c.jpg",
+      "availableInStock": 4
+    },
+    {
+      "id": "8",
+      "name": "Dracaena marginata",
+      "price": 27.9,
+      "description": "Dracaena marginata, ou Dragoeiro, é uma planta de fácil manutenção, com folhas finas e alongadas que trazem modernidade ao espaço.",
+      "image": "https://plantworldlondon.com/wp-content/uploads/2023/07/Dracaena-Marginata.jpg",
+      "availableInStock": 6
+    },
+    {
+      "id": "9",
+      "name": "Zamioculcas zamiifolia",
+      "price": 36.9,
+      "description": "Zamioculcas zamiifolia, conhecida como Zamioculca, é uma planta robusta, ideal para ambientes internos com baixa luz e pouca necessidade de rega.",
+      "image": "https://nordicgreen.com.br/cdn/shop/products/Zamioculca-Freia-Cachepo-Medio-Branco_1200x1200.jpg?v=1703013872",
+      "availableInStock": 9
+    },
+    {
+      "id": "10",
+      "name": "Anthurium andraeanum",
+      "price": 42.9,
+      "description": "Anthurium andraeanum, ou Antúrio, destaca-se por suas flores brilhantes e folhas verdes, sendo uma opção elegante para decoração.",
+      "image": "https://images.squarespace-cdn.com/content/v1/5728dc7cd51cd4809e7aaa01/1623695565096-Q1YLYTXXG43DTR1MPI35/24-+Ant%C3%BArio+Red+Victory+Anthurium+andraeanum+04185.jpg?format=1500w",
+      "availableInStock": 5
+    },
+    {
+      "id": "1b7d44e3-e3fd-483b-8ab2-9ec7272b7ef3",
+      "name": "Babosa",
+      "price": "30",
+      "description": "Boa para o cabelo",
+      "image": "https://imagens-revista.vivadecora.com.br/uploads/2020/06/Como-plantar-babosa-em-vaso-sem-prejudicar-o-crescimento-da-planta.-Fonte-Pinterest-1.jpg",
+      "availableInStock": "10"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "admin"
+    }
+  ]
+}

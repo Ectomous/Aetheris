@@ -1,0 +1,15 @@
+@if (product) {
+<div class="product-card">
+  <img src="{{ product.image }}" alt="{{ product.name }} image" class="product-card__image">
+  <div class="product-card__lower-section">
+    <div class="product-card__info">
+      <span class="product-card__info-title">{{ product.name }}</span>
+      <p class="product-card__info-description">
+        {{ truncatedDescription }}
+      </p>
+      <span class="product-card__info-price">{{product.price}}</span>
+    </div>
+    <img src="/assets/cart-plus.svg" alt="" class="product-card__add-button">
+  </div>
+</div>
+}
