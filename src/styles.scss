@@ -1,1 +1,22 @@
 @use "./styles/reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$primary-color-1: #39432b;
+$primary-color-2: #6d7754;
+$primary-color-3: #9fb873;
+$primary-color-4: #9aa682;
+$primary-color-5: #ccd5c0;
+$white-color: #f1f1f1;
+$gray-color-1: #dbddd1;
+$gray-color-2: #a9b4a4;
+$accent-color-1: #ece5d2;
+$accent-color-2: #cdbfa3;
+
+.container {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
