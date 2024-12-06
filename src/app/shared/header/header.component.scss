@@ -1,0 +1,74 @@
+@use "../../../styles.scss" as *;
+
+header {
+  position: absolute;
+  width: 1224px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  #navbar {
+    display: flex;
+
+    #navbar-left {
+      display: flex;
+      gap: 20px;
+      width: 400px;
+
+      .navbar-left__logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        .logo__img {
+          width: 60px;
+        }
+      }
+
+      .navbar-left__title {
+        font-family: "Lobster Two", serif;
+        font-size: 32px;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+
+    #navbar-center {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 0 auto;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+      }
+    }
+
+    #navbar-right {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+      width: 400px;
+
+      form input {
+        border-radius: 35px;
+        height: 40px;
+        max-width: 250px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      .navbar-right__icon {
+        width: 30px;
+      }
+    }
+  }
+}
