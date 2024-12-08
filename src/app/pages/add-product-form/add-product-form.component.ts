@@ -1,12 +1,16 @@
 import { Router } from '@angular/router';
-import { FormControl, FormGroup ,Validators, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { ProductService } from './../../services/product.service';
 import { Component, inject } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-add-product-form',
-  standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './add-product-form.component.html',
   styleUrl: './add-product-form.component.scss',
@@ -14,10 +18,7 @@ import { v4 as uuidv4 } from 'uuid';
 export class AddProductFormComponent {
   productForm: FormGroup;
 
-  constructor(
-    private productService: ProductService,
-    private router: Router
-  ) {
+  constructor(private productService: ProductService, private router: Router) {
     this.productService = inject(ProductService);
     this.router = inject(Router);
 
@@ -27,7 +28,10 @@ export class AddProductFormComponent {
       price: new FormControl('', [Validators.required, Validators.min(0)]),
       description: new FormControl('', Validators.required),
       image: new FormControl('', Validators.required),
-      availableInStock: new FormControl('', [Validators.required, Validators.min(0)]),
+      availableInStock: new FormControl('', [
+        Validators.required,
+        Validators.min(0),
+      ]),
     });
   }
 
@@ -44,10 +48,12 @@ export class AddProductFormComponent {
       next: () => {
         console.log('Produto adicionado com sucesso!');
         this.router.navigate(['home']);
-      }, 
+      },
       error: () => {
-        console.log('Erro interno do servidor. Contate o suporte para mais informações!')
-      }
+        console.log(
+          'Erro interno do servidor. Contate o suporte para mais informações!'
+        );
+      },
     });
   }
 }

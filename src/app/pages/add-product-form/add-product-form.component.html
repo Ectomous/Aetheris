@@ -1,19 +1,21 @@
-<h2>Plant Information Form</h2>
-<form [formGroup]="productForm" (ngSubmit)="submitForm()">
-  <label>Nome da Planta</label>
-  <input formControlName="name" placeholder="Insira o nome da planta">
-
-  <label>Preço</label>
-  <input formControlName="price" placeholder="Insira o preço">
-
-  <label>Descrição</label>
-  <textarea formControlName="description" rows="4" placeholder="Insira a descrição da planta"></textarea>
-
-  <label>Image URL</label>
-  <input formControlName="image" placeholder="Insira a URL da imagem da planta">
-
-  <label>Quantidade Disponível</label>
-  <input formControlName="availableInStock" placeholder="Insira a quantidade disponível">
-
-  <button type="submit">Confirmar</button>
-</form>
+<main>
+  <form [formGroup]="productForm" (ngSubmit)="submitForm()" class="add-form">
+    <h2 class="add-form__title">Adicione um produto</h2>
+    <label class="add-form__label">Nome da Planta</label>
+    <input formControlName="name" placeholder="Insira o nome da planta" class="add-form__input">
+  
+    <label class="add-form__label">Preço</label>
+    <input formControlName="price" placeholder="Insira o preço" class="add-form__input">
+  
+    <label class="add-form__label">Descrição</label>
+    <textarea formControlName="description" rows="4" placeholder="Insira a descrição da planta" class="add-form__textarea"></textarea>
+  
+    <label class="add-form__label">URL da Imagem</label>
+    <input formControlName="image" placeholder="Insira a URL da imagem da planta" class="add-form__input">
+  
+    <label class="add-form__label">Quantidade Disponível</label>
+    <input formControlName="availableInStock" placeholder="Insira a quantidade disponível" class="add-form__input">
+  
+    <button type="submit" class="add-form__button">Adicionar</button>
+  </form>
+</main>
