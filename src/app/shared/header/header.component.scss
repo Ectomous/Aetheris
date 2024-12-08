@@ -1,11 +1,9 @@
 @use "../../../styles.scss" as *;
 
 header {
-  position: absolute;
-  width: 1224px;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: $primary-color-1;
+  max-width: 1200px;
+
   #navbar {
     display: flex;
 
@@ -18,7 +16,7 @@ header {
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: #ffffff;
+        color: $primary-color-5;
 
         .logo__img {
           width: 60px;
@@ -37,7 +35,7 @@ header {
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin: 0 auto;
+      width: 400px;
 
       a {
         display: flex;
@@ -45,7 +43,7 @@ header {
 
         text-decoration: none;
         font-size: 18px;
-        color: #ffffff;
+        color: $primary-color-5;
       }
     }
 
@@ -64,10 +62,15 @@ header {
         border: none;
         outline: none;
         box-shadow: none;
+        color: $primary-color-1;
       }
 
       .navbar-right__icon {
         width: 30px;
+      }
+
+      a {
+        cursor: pointer;
       }
     }
   }

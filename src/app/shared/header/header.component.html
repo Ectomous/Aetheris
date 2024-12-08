@@ -1,7 +1,7 @@
 <header>
   <div id="navbar" class="container">
     <div id="navbar-left">
-      <a href="/" class="navbar-left__logo">
+      <a routerLink="/home" class="navbar-left__logo">
         <img src="/assets/lotus-flower.svg" alt="logo da marca" class="logo__img">
         <span class="navbar-left__title">Aetheris</span>
       </a>
@@ -21,10 +21,16 @@
       <a href="/">
         <img src="/assets/magnifying-glass.svg" alt="search icon" class="navbar-right__icon">
       </a>
-      <a href="/">
-        <img src="/assets/user.svg" alt="user icon" class="navbar-right__icon">
-      </a>
-      <a href="/">
+      @if (userIsAutenticated()) {
+        <a (click)="logout()">
+          <img src="/assets/logout-user.svg" alt="logout user icon" class="navbar-right__icon">
+        </a>
+      } @else {
+        <a routerLink="/login">
+          <img src="/assets/user.svg" alt="user icon" class="navbar-right__icon">
+        </a>
+      }
+      <a href="javascript:void(0)" (click)="toggleCart()">
         <img src="/assets/shopping-cart.svg" alt="cart icon" class="navbar-right__icon">
       </a>
     </div>
