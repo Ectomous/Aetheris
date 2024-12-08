@@ -1,4 +1,3 @@
-<app-header></app-header>
 <main>
   <section class="hero">
     <div class="hero-content container">
@@ -12,12 +11,14 @@
     </div>
   </section>
 
-  <section class="catalog">
-    @for(productObj of productsArray; track productObj.id) {
-    <app-product-card [product]="productObj"></app-product-card>
-    }
-    @empty {
-    <h2>Não há nenhum produto cadastrado.</h2>
-    }
+  <section class="catalog container">
+    <div class="catalog-content">
+      @for(productObj of productsArray; track productObj.id) {
+      <app-product-card [product]="productObj"></app-product-card>
+      }
+      @empty {
+      <h2>Não há nenhum produto cadastrado.</h2>
+      }
+    </div>
   </section>
 </main>

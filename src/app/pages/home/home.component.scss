@@ -3,9 +3,6 @@
 main {
   .hero {
     position: relative;
-    width: auto;
-    height: 890px;
-    min-height: 100vh;
     overflow: hidden;
 
     &::before {
@@ -27,10 +24,9 @@ main {
     .hero-content {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 100px;
-      margin-top: 150px;
-      color: #ffffff;
+      justify-content: space-between;
+      margin-top: 100px;
+      margin-bottom: 100px;
 
       .hero-content__text {
         max-width: 600px;
@@ -58,6 +54,25 @@ main {
         background-position: bottom;
         border-radius: 100%;
         border: 1px solid #ffffff;
+      }
+    }
+  }
+  .catalog {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: $gray-color-2;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .catalog-content {
+      padding: 20px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px; // Espaçamento entre os cards
+      justify-content: space-around;
+
+      app-product-card {
+        box-sizing: border-box; // Inclui o padding e border no cálculo da largura
       }
     }
   }
