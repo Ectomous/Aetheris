@@ -1,0 +1,18 @@
+@use "../../../styles.scss" as *;
+
+footer {
+  .footer-content {
+    p {
+      height: 60px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 1.2rem;
+      color: $primary-color-5;
+
+      span {
+        color: $accent-color-2;
+      }
+    }
+  }
+}
