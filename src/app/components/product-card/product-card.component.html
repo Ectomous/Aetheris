@@ -5,11 +5,11 @@
     <div class="product-card__info">
       <span class="product-card__info-title">{{ product.name }}</span>
       <p class="product-card__info-description">
-        {{ truncatedDescription }}
+        {{ product.description }}
       </p>
-      <span class="product-card__info-price">{{product.price}}</span>
+      <span class="product-card__info-price">{{product.price | currency:'R$ ' }}</span>
     </div>
-    <img src="/assets/cart-plus.svg" alt="" class="product-card__add-button">
+    <img src="/assets/cart-plus.svg" alt="" class="product-card__add-button" (click)="addProductToCart(product)">
   </div>
 </div>
 }
