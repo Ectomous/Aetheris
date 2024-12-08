@@ -1,0 +1,27 @@
+@use "../../../styles.scss" as *;
+
+.not-found-container {
+  text-align: center;
+  margin-top: 100px;
+}
+.not-found-container h2 {
+  font-size: 48px;
+  color: $primary-color-1;
+}
+.not-found-container p {
+  font-size: 22px;
+}
+.not-found-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: $primary-color-4;
+  color: $primary-color-1;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  &:hover {
+    background-color: $primary-color-2;
+    color: $primary-color-5;
+  }
+}
