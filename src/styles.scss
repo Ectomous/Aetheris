@@ -13,8 +13,12 @@ $accent-color-1: #ece5d2;
 $accent-color-2: #cdbfa3;
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0px auto;
+}
+
+body {
+  background-color: $gray-color-1;
 }
 
 * {

@@ -1,0 +1,6 @@
+@use "../styles.scss" as *;
+app-header {
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color-1;
+}
