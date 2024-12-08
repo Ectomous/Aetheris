@@ -1,0 +1,19 @@
+<main>
+  <form [formGroup]='loginForm' (ngSubmit)="submitForm()" class="login-form">
+    <h2 class="login-form__title">Login</h2>
+    <label class="login-form__label">Email</label>
+    <input formControlName="email" placeholder="Insira o seu email" class="login-form__input">
+    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error-message">
+      <span *ngIf="loginForm.get('email')?.errors?.['required']">O email é obrigatório.</span>
+      <span *ngIf="loginForm.get('email')?.errors?.['email']">O email inválido.</span>
+    </div>
+
+    <label class="login-form__label">Password</label>
+    <input formControlName="password" type="password" placeholder="Insira a sua senha" class="login-form__input">
+    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+      <span *ngIf="loginForm.get('password')?.errors?.['required']">A senha é obrigatória.</span>
+    </div>
+
+    <button type="submit" class="login-form__button">Login</button>
+  </form>
+</main>

@@ -1,0 +1,55 @@
+@use "../../../styles.scss" as *;
+
+main {
+  background-color: $gray-color-1;
+  padding: 60px 0px;
+
+  .login-form {
+    background-color: $gray-color-2;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 30px 40px;
+    border-radius: 20px;
+    color: $primary-color-1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .login-form__title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-form__label {
+      display: block;
+      margin: 10px 0px 5px;
+      font-weight: bold;
+    }
+
+    .login-form__input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid $gray-color-1;
+      border-radius: 8px;
+    }
+
+    span {
+      color: rgb(236, 74, 74);
+    }
+
+    .login-form__button {
+      background-color: $primary-color-4;
+      color: $primary-color-1;
+      font-weight: 600;
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color-2;
+        color: $primary-color-5;
+      }
+    }
+  }
+}
