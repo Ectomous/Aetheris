@@ -42,26 +42,38 @@ O objetivo é criar um e-commerce funcional e dinâmico, implementando conceitos
 
 ## 🚀 Como Rodar o Projeto
 
-1. **Clone o repositório**
+1. **Pré-requisitos**
+
+   Certifique-se de ter o [Git](https://git-scm.com/), [npm](https://www.npmjs.com/get-npm) e [json-server](https://github.com/typicode/json-server) instalados em seu computador.
+
+2. **Clone o repositório**
 
    ```bash
    git clone https://github.com/Ectomous/Aetheris.git
    cd aetheris
    ```
 
-2. **Instale as dependências**
+3. **Instale as dependências**
 
    ```bash
    npm install
    ```
 
-3. **Inicie o servidor de desenvolvimento**
+4. **Inicie o servidor de desenvolvimento**
 
    ```bash
    ng serve
    ```
 
-4. **Acesse no navegador**
+5. **Inicie o json-server**
+
+   Em outro terminal, execute:
+
+   ```bash
+   json-server --watch db.json
+   ```
+
+6. **Acesse no navegador**
 
    Abra o seu navegador e acesse o endereço apresentado na CLI.
 
