@@ -1,0 +1,23 @@
+<div class="cart initial" [class.show]="isCartVisible">
+  <div class="cart-content">
+    <h3 class="cart-content__title">Carrinho de Compras</h3>
+    <div class="cart-items">
+      @for(item of cartItemsArray; track item.product.id) {
+      <div class="cart-item">
+        <img src="{{item.product.image}}" alt="{{item.product.name}} image" class="cart-item__image">
+        <div class="cart-item__info">
+          <h5>{{item.product.name}}</h5>
+          <div>
+            <span>{{item.quantity}}</span>
+          </div>
+        </div>
+        <div class="cart-item__quantityControl">
+          <button (click)="addItem(item)">&plus;</button>
+          <button (click)="removeItem(item)">&minus;</button>
+        </div>
+      </div>
+      }
+    </div>
+    <div class="total-price">Valor Total: {{totalPrice() | currency:'R$ ' }}</div>
+  </div>
+</div>

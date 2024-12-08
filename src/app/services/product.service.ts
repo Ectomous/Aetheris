@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {
     this.http = inject(HttpClient);
